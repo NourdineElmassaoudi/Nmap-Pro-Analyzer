@@ -20,7 +20,15 @@ A powerful Python tool that intelligently parses **any** Nmap XML scan output an
 ---
 
 ## 📦 Installation
+## 🚀 Installation & Setup
 
+To install the tool and make it accessible from anywhere in your terminal, run the following commands:
+
+```bash
+git clone https://github.com/NourdineElmassaoudi/Nmap-Pro-Analyzer.git
+cd Nmap-Pro-Analyzer
+chmod +x install.sh
+./install.sh
 ### 1. Install Python Dependencies
 
 ```bash
