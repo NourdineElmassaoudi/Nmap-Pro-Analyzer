@@ -130,7 +130,26 @@ sudo nmap -sV -O -p- --top-ports 1000 -oX balanced.xml <target>
 │  🔐 Kerberos + SMB Server            │
 ╰──────────────────────────────────────╯
 ```
+Host #1   192.168.1.10
+Hostname(s):  dc01.corp.local
+Status:      UP
+OS Detected:  Windows Server 2019 Standard (Windows)
+Ports:       7 found (7 open / 0 closed)
 
+     Port  Protocol  State   Service        Product/Version
+    ─────────────────────────────────────────────────────────
+       53    tcp    open    domain         Microsoft DNS 10.0
+       88    tcp    open    kerberos-sec   Windows Kerberos  [Critical]
+      135    tcp    open    msrpc          Windows RPC       [Critical]
+      389    tcp    open    ldap           Microsoft LDAP    [Critical]
+      445    tcp    open    microsoft-ds   Windows Server    [Critical]
+     3268    tcp    open    msft-gc        Active Directory  [Critical]
+     3389    tcp    open    ms-wbt-server  Terminal Services [High]
+
+Infrastructure Inference (Windows):
+  🏢 Windows Domain Controller
+  🔐 Kerberos + SMB Server
+  ⚠️  Multiple critical ports open
 ### Color Legend
 
 | Color | Meaning | Examples |
